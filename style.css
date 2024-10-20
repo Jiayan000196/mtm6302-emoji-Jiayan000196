@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.panel_emoji {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.emojiBlock {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+.emojiImage {
+    font-size: 5rem;
+}
+
+.emojiCode {
+    background: #ddd;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.15rem;
+}
+
+@media (max-width: 1024px) {
+    .panel_emoji {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .panel_emoji {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .emojiImage {
+        font-size: 3rem; 
+    }
+}
